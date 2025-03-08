@@ -1,3 +1,4 @@
+import { Mail } from 'lucide-react';
 
 function App() {
   const currentYear = new Date().getFullYear();
@@ -15,6 +16,13 @@ function App() {
         <p className="text-xl md:text-2xl tracking-wide mt-4">
           2018 - {currentYear}
         </p>
+        <a 
+          href="mailto:info@caneydigital.com" 
+          className="inline-flex items-center gap-2 mt-8 text-lg md:text-xl text-gray-300 hover:text-white transition-colors duration-300"
+        >
+          <Mail size={20} />
+          info@caneydigital.com
+        </a>
       </div>
     </div>
   );
