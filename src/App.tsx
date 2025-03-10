@@ -1,8 +1,13 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { Mail } from 'lucide-react';
 
 function App() {
   const currentYear = new Date().getFullYear();
-
+  useEffect(() => {
+    ReactGA.initialize("G-W2FPRJ6YES"); 
+    ReactGA.send("pageview");
+  }, []);
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center text-white">
       <div className="text-center">
